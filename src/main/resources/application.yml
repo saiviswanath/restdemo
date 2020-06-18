@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    username: root
+    password: shradha139#
+    url: jdbc:mysql://localhost:3306/cinema_booking_system
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true  
+
+security:
+  jwt:
+    resource-ids: oauth2-resource
+  oauth2:
+    client:
+      clientId: 0oab72ktlxmiYYLFs4x6
+      clientSecret: V1q7MppeLTrz5ri2Lh51EjwdFck23mKdPDDetooA
+    resource:
+      filter-order: 3
+      jwt:
+        key-uri: https://dev-321213.okta.com/oauth2/default/v1/keys
+        
